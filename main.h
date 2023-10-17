@@ -19,7 +19,8 @@
 #define S_LONG 2
 #define S_SHORT 1
 
-struct format_specifier {
+struct format_specifier
+{
 	char format;
 	int (*handler)(va_list, char[], int, int, int, int);
 };
